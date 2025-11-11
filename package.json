@@ -1,0 +1,30 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "App to send HTML Template",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akhil-UI/mailto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akhil-UI/mailto/issues"
+  },
+  "homepage": "https://github.com/Akhil-UI/mailto#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
