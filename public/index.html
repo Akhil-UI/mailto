@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MailTo HTML Email Sender</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>MailTo HTML Email Sender</h1>
+      <p>Edit the template, preview it in real time, and send it to any email address.</p>
+    </header>
+
+    <main class="grid">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Template Editor</h2>
+          <div class="panel-actions">
+            <button id="resetTemplate" type="button" class="secondary">Reload stored template</button>
+            <button id="saveTemplate" type="button">Save template</button>
+          </div>
+        </div>
+        <textarea id="templateEditor" spellcheck="false"></textarea>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Live Preview</h2>
+          <span id="previewStatus" class="chip">waiting</span>
+        </div>
+        <iframe id="previewFrame" title="HTML preview"></iframe>
+      </section>
+
+      <section class="panel">
+        <h2>Send Email</h2>
+        <form id="sendForm" novalidate>
+          <label class="field">
+            <span>Recipient email</span>
+            <input id="recipientInput" type="email" placeholder="you@example.com" required />
+          </label>
+          <label class="field">
+            <span>Subject</span>
+            <input id="subjectInput" type="text" placeholder="MailTo HTML Email" />
+          </label>
+          <label class="field">
+            <span>Use current editor HTML?</span>
+            <div class="checkbox-group">
+              <input id="useEditorHtml" type="checkbox" checked />
+              <label for="useEditorHtml">Send what I see above instead of the stored template</label>
+            </div>
+          </label>
+          <button id="sendButton" type="submit">Send email</button>
+        </form>
+      </section>
+    </main>
+
+    <div id="notification" role="status" aria-live="polite"></div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
