@@ -3,76 +3,232 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to MailTo</title>
+    <title>Aptroid | We're Hiring</title>
     <style>
       body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #f6f9fc;
         margin: 0;
         padding: 24px;
+        background-color: #e8f0fe;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #1b2a3d;
       }
-      .container {
-        max-width: 600px;
+      table {
+        border-collapse: collapse;
+      }
+      .email-root {
+        width: 100%;
+      }
+      .wrapper {
+        width: 100%;
+        max-width: 640px;
         margin: 0 auto;
         background: #ffffff;
-        border-radius: 8px;
+        border-radius: 18px;
+        border: 1px solid #dce8ff;
         overflow: hidden;
-        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
       }
-      header {
-        background: linear-gradient(135deg, #2563eb, #7c3aed);
+      .hero {
+        background: linear-gradient(135deg, #0f5c94, #03a688);
         color: #ffffff;
-        padding: 24px;
+        padding: 32px;
+      }
+      .hero h1 {
+        margin: 12px 0 6px;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+      }
+      .hero p {
+        margin: 4px 0;
+      }
+      .badge {
+        background: #f97316;
+        color: #ffffff;
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+      .section {
+        padding: 28px 32px;
+        border-bottom: 1px solid #eef2ff;
+      }
+      .section:last-of-type {
+        border-bottom: none;
+      }
+      .section h2 {
+        margin: 0 0 12px;
+        font-size: 18px;
+        color: #0f4c81;
+        letter-spacing: 0.4px;
+      }
+      .section p {
+        margin: 0 0 12px;
+        line-height: 1.5;
+      }
+      .section ul {
+        margin: 0;
+        padding-left: 20px;
+        line-height: 1.5;
+      }
+      .info-banner {
+        background: #f0f9ff;
+        border-left: 4px solid #0284c7;
+        padding: 20px 24px;
+        margin-top: 8px;
+        border-radius: 12px;
+      }
+      .cta-block {
+        padding: 24px 32px 32px;
         text-align: center;
       }
-      header h1 {
-        margin: 0;
-        font-size: 24px;
-      }
-      main {
-        padding: 24px;
-        color: #1f2937;
-        line-height: 1.6;
-      }
-      .cta {
-        display: inline-block;
-        margin-top: 16px;
-        padding: 12px 24px;
-        background-color: #2563eb;
+      .cta-button {
+        background: #0ea5e9;
         color: #ffffff;
         text-decoration: none;
-        border-radius: 6px;
+        padding: 14px 28px;
+        border-radius: 999px;
+        font-weight: 600;
+        display: inline-block;
       }
-      footer {
-        background-color: #f1f5f9;
-        padding: 16px 24px;
+      .cta-note {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #0f172a;
+      }
+      .venue {
+        background: #0f172a;
+        color: #ffffff;
+        padding: 28px 32px;
+      }
+      .venue h3 {
+        margin: 0 0 12px;
+        font-size: 18px;
+        letter-spacing: 0.4px;
+      }
+      .footer {
+        padding: 18px 32px 32px;
+        font-size: 13px;
+        color: #475569;
         text-align: center;
-        font-size: 12px;
-        color: #6b7280;
+      }
+      @media (max-width: 600px) {
+        body {
+          padding: 12px;
+        }
+        .section,
+        .cta-block,
+        .venue,
+        .hero {
+          padding: 24px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Welcome to MailTo</h1>
-        <p>Kickstart your next email campaign</p>
-      </header>
-      <main>
-        <p>Hi there,</p>
-        <p>
-          Thanks for trying out the MailTo HTML email editor. You can customize this template
-          to match your brand and messaging, then send it out with a single click.
-        </p>
-        <p>
-          This template is fully responsive and follows best practices for HTML email clients.
-        </p>
-        <a class="cta" href="https://example.com">Explore MailTo</a>
-        <p>Cheers,<br />The MailTo Team</p>
-      </main>
-      <footer>
-        You're receiving this email because you signed up for MailTo updates.
-      </footer>
-    </div>
+    <table role="presentation" width="100%" class="email-root">
+      <tr>
+        <td align="center">
+          <table role="presentation" class="wrapper">
+            <tr>
+              <td class="hero">
+                <table role="presentation" width="100%">
+                  <tr>
+                    <td style="font-weight: 700; font-size: 18px">Aptroid Consulting (India) Pvt. Ltd.</td>
+                    <td align="right">
+                      <span class="badge">We're Hiring</span>
+                    </td>
+                  </tr>
+                </table>
+                <h1>Project Associate · Digital Marketing</h1>
+                <p>B.Tech (CSE / IT / ECE) / MCA · 2024 & 2025 pass outs</p>
+                <p style="opacity: 0.9">Minimum 60% aggregate throughout academics</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2>Eligibility</h2>
+                <p>
+                  Fresh graduates who are passionate about digital marketing and willing to grow with a fast-moving consulting
+                  team.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2>Pre-Requisites</h2>
+                <ul>
+                  <li>Comfort working with international time zones (US / UK)</li>
+                  <li>Ready to commit 2 years to the organization</li>
+                  <li>Immediate joiners are preferred</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2>Skill Set</h2>
+                <ul>
+                  <li>Strong analytical and problem-solving mindset</li>
+                  <li>Solid academic fundamentals and conceptual clarity</li>
+                  <li>Ability to relate technology trends to marketing outcomes</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2>Selection Process</h2>
+                <ul>
+                  <li>Written test covering Arithmetic, Logical Reasoning, and Verbal Ability</li>
+                  <li>Technical round focused on digital marketing scenarios</li>
+                  <li>Behavioral interview</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2>Compensation</h2>
+                <p>
+                  INR 4,50,000 per annum + benefits (company-provided cab drop and meals). Remuneration may grow with confirmed
+                  client projects and performance milestones.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2>How to Apply</h2>
+                <div class="info-banner">
+                  Any eligible or interested friends can share their resumes with
+                  <a href="mailto:talentacquisitionpartner@aptroid.com" style="color: #0f4c81; font-weight: 600"
+                    >talentacquisitionpartner@aptroid.com</a
+                  >
+                  and also attend the walk-in drive on <strong>28 November · 10:30 AM</strong>.
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="cta-block">
+                <a class="cta-button" href="mailto:talentacquisitionpartner@aptroid.com">Share Your Profile</a>
+                <div class="cta-note">Walk-in interviews: 28 Nov · Reporting by 10:30 AM</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="venue">
+                <h3>Walk-In Venue</h3>
+                <p style="margin: 0 0 8px">8th Floor, B Block, Laxmi Cyber City, Hitech City, Hyderabad - 500081.</p>
+                <p style="margin: 0 0 8px">Tel: 040-6924 6666 · Email: info@aptroid.com · www.aptroid.com</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="footer">
+                You are receiving this update because you previously connected with Aptroid Consulting. Update your preferences
+                any time by replying to this email.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
